@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/*Declarações Gerais*/
+
+@media all {
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 350px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url("../imagens/banner-dmnews-form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(211, 211, 211, 0.158);
+}
+
+main {
+    max-width: 800px;
+    min-width: 320px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+}
+
+main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffc720;
+}
+
+main h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffc720;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: #014aad;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #014aad;
+    margin-left: 70px;
+}
+
+
+footer {
+    padding: 30px;
+    margin-top: 410px;
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color:#ffc720;
+}
+}
+
+
+/*Decalarações Retrato*/
+
+@media screen and (orientation: portrait) {
+    header {
+        padding: 350px;
+        padding-left: 0;
+        padding-right: 0;
+        background-image: url("../imagens/cabecalho-form.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        background-color: rgba(211, 211, 211, 0.158);
+    }
+
+    main{
+        margin: auto;
+    }
+    section {
+        position: absolute;
+        margin-top: 39%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section a.link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color:#014aad;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    section a.link:hover {
+        text-decoration: underline;
+    }
+}
+
+/*Declarações PAISAGEM*/
+
+@media screen and (orientation: landscape) {
+    
+    footer {
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    section {
+        position: absolute;
+        display: flexbox;
+        top: 135%;
+        left: 80%;
+    
+    }
+
+    section a.link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color:#014aad;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    section a.link:hover {
+        text-decoration: underline;
+    }
+}
