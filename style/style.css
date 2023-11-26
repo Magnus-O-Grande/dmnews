@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/*Declarações Gerais*/
+
+@media all {
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #014aad;
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    /*CORES*/
+    --cor1: #014aad;
+    --cor2: #fcc729;
+    --cor3: #cd2418;
+
+    /*FONTES*/
+    --fonte-padrao: 'Arial, Helvetica, sans-serif';
+}
+
+header {
+    padding: 350px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url(imagens/banner-dmnews-form.jpg);
+        /*background-image: url("../imagens/banner-dmnews-form.jpg");*/
+
+    
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: contain;*/
+    background-color: white;
+}
+
+nav{
+    font-size: 2.1vw;
+    background-color: #ffc720;
+    padding: 10px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: #014aad;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.993);
+    margin-bottom: 20px;
+
+}
+
+nav :hover{
+    background-color: #014aad;
+    border-radius: 50px;
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1500px;
+    min-width: 300px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em; *****************
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffc720;
+}
+
+main h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;*********************
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffc720;
+}
+
+main p {
+    /*familia da fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*deixar a letra responsiva:*/
+    font-size: 2.5vw;
+
+    line-height: 1.7em;
+
+    /*texto justificado:*/
+    text-align: justify;
+
+    /*espaçamento  de paragrafo*/
+    text-indent: 20px;
+    
+    /*
+    margin-top: 15px;*/
+
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    color: #014aad;
+
+    /*espaçamento entre linhas:*/
+    line-height: 2em;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #014aad;
+    margin-left: 70px;
+}
+
+
+footer {
+    padding: 30px;
+    margin-top: 410px;
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color:#ffc720;
+}
+}
+
+
+/*Decalarações Retrato*/
+
+@media screen and (orientation: portrait) {
+    header {
+        padding: 350px;
+        padding-left: 0;
+        padding-right: 0;
+        background-image: url("../imagens/cabecalho-form.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        background-color: rgba(211, 211, 211, 0.158);
+
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    main{
+        margin: auto;
+    }
+    section {
+        position: absolute;
+        margin-top: 39%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section a.link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color:#014aad;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    section a.link:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/*Declarações PAISAGEM*/
+
+@media screen and (orientation: landscape) {
+    footer {
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    section {
+        position: absolute;
+        display: flexbox;
+        top: 135%;
+        left: 80%;
+    
+    }
+
+    section a.link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color:#014aad;
+        text-decoration: none;
+        text-align: center;
+
+        background-color: white;
+        display: flexbox;
+        
+        border-radius: 50px;
+        padding: 10px;
+    }
+
+    section a.link:hover {
+        text-decoration: underline;
+    }
+}
