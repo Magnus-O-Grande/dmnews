@@ -1,128 +1,111 @@
 @charset "UTF-8";
 
-/*Declarações Gerais*/
+/*CONFIGURAÇÕES GERAIS*/
 
-@media all {
-    * {
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    min-height: 100vh;
-    background-color: #014aad;
-    font-family: var(--fonte-padrao);
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 :root{
     /*CORES*/
+    --cor0: white;
     --cor1: #014aad;
     --cor2: #fcc729;
     --cor3: #cd2418;
 
     /*FONTES*/
-    --fonte-padrao: 'Arial, Helvetica, sans-serif';
+    --fonte-padrao: font-family: 'Arial, Helvetica, sans-serif';
 }
 
-header {
-    padding: 350px;
-    padding-left: 150px;
-    padding-right: 150px;
-    background-image: url(imagens/banner-dmnews-form.jpg);
-        /*background-image: url("../imagens/banner-dmnews-form.jpg");*/
+html, body{
+    width: 98.8.9vw;
+    height: 100vh;
 
-    
-    background-size: cover;
-    background-attachment: fixed;
-    
-
-    background-repeat: no-repeat;
-    background-position: center;
-    /*background-size: contain;*/
-    background-color: white;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
 }
+
+
 
 nav{
-    font-size: 2.1vw;
-    background-color: #ffc720;
-    padding: 10px;
-    text-align: right;
+    background-color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
-}
-
-nav a{
-    text-decoration: none;
-    color: #014aad;
-    padding: 15px;
+    font-size: 1em;
     text-align: left;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.993);
-    margin-bottom: 20px;
-
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+    padding: 10px;
 }
 
-nav :hover{
-    background-color: #014aad;
-    border-radius: 50px;
-    color: white;
+nav > a{
+    color: var(--cor0);
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav a:hover{
+    color: var(--cor2);
+    background-color: var(--cor0);
     text-decoration: underline;
-}
-
-main {
-    max-width: 1500px;
-    min-width: 300px;
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 10%;
-
-    background-color: white;
-
     border-radius: 10px;
 }
 
+main {
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 800px;
+    padding: 15px;
+
+    background-color: var(--cor0);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+}
+
+main h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor3);
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 25px;
+}
+
 main h2{
+    color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em; *****************
+    font-size: 2em;
     font-weight: bold;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    color: #ffc720;
+    text-indent: 0.5em;
+    text-align: left;
+    line-height: 1.5;
 }
 
-main h3 {
+main h3{
+    color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;*********************
+    font-size: 1.5em;
     font-weight: bold;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    color: #ffc720;
+    text-align: center;
+    line-height: 1.5;
 }
 
-main p {
-    /*familia da fonte*/
+main p{
+    color: var(--cor1);
     font-family: Arial, Helvetica, sans-serif;
-
-    /*deixar a letra responsiva:*/
-    font-size: 2.5vw;
-
-    line-height: 1.7em;
-
-    /*texto justificado:*/
+    font-size: 1.5em;
+    font-weight: normal;
     text-align: justify;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+    margin-left: 27px;
+    margin-right: 27px;
+}
 
-    /*espaçamento  de paragrafo*/
-    text-indent: 20px;
-    
-    /*
-    margin-top: 15px;*/
-
-    margin-right: 20px;
-    margin-left: 20px;
-    
-    color: #014aad;
-
-    /*espaçamento entre linhas:*/
-    line-height: 2em;
+main p strong{
+    color: var(--cor3);
 }
 
 main img {
@@ -136,97 +119,4 @@ main ul {
     line-height: 1.7em;
     color: #014aad;
     margin-left: 70px;
-}
-
-
-footer {
-    padding: 30px;
-    margin-top: 410px;
-}
-
-footer p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3em;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    color:#ffc720;
-}
-}
-
-
-/*Decalarações Retrato*/
-
-@media screen and (orientation: portrait) {
-    header {
-        padding: 350px;
-        padding-left: 0;
-        padding-right: 0;
-        background-image: url("../imagens/cabecalho-form.jpg");
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-size: contain;
-        background-color: rgba(211, 211, 211, 0.158);
-
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    main{
-        margin: auto;
-    }
-    section {
-        position: absolute;
-        margin-top: 39%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    section a.link {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.2em;
-        color:#014aad;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    section a.link:hover {
-        text-decoration: underline;
-    }
-}
-
-
-/*Declarações PAISAGEM*/
-
-@media screen and (orientation: landscape) {
-    footer {
-        padding: 30px;
-        margin-top: 70px;
-    }
-
-    section {
-        position: absolute;
-        display: flexbox;
-        top: 135%;
-        left: 80%;
-    
-    }
-
-    section a.link {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-        color:#014aad;
-        text-decoration: none;
-        text-align: center;
-
-        background-color: white;
-        display: flexbox;
-        
-        border-radius: 50px;
-        padding: 10px;
-    }
-
-    section a.link:hover {
-        text-decoration: underline;
-    }
 }

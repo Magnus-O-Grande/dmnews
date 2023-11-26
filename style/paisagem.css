@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/*CONFIGURAÇÕES PARA MODO PAISAGEM (landscape)*/
+
+header {
+    padding: 350px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url(../imagens/banner-dmnews\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cor0);
+    background-size: contain;
+    /*EFEITO PARALAX*/
+    /*background-size: contain;
+    background-attachment: fixed;*/
+}
+
+/*
+    main{
+        max-width: 600px;
+        min-width: 100vh;
+    }*/
+
+    h1{
+        font-size: 2.5em;
+    }
+    
+    main h2{
+        color: var(--cor2);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-indent: 0.5em;
+        text-align: left;
+        line-height: 1.5;
+    }
+    
+    main h3{
+        color: var(--cor2);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    main p{
+        color: var(--cor1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: normal;
+        text-align: justify;
+        text-indent: 1.5em;
+        line-height: 1.5em;
+        margin-left: 27px;
+        margin-right: 27px;
+    
+    }
+
+    section {
+        position: absolute;
+        display: flexbox;
+        top: 135%;
+        left: 80%;
+    }
+
+    section a.link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color:var(--cor0);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    section a.link:hover {
+        transition: .3s;
+        color: #fcc729;
+        text-decoration: underline;
+    }
+
+    footer {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--cor2);
+        color: var(--cor0);
+        display: block;
+        columns: 3;
+        align-items: baseline;
+    }
+    
+    footer hr {
+        width: 300px;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: var(--cor1);
+    }
+    
+    footer a {
+        color: var(--cor0);
+        text-decoration: none;
+        transition: .3s;
+    }
+    
+    footer a:hover {
+        color: var(--cor3);
+    }
+    
+    footer li {
+        padding:5px;
+    }
+    
+    footer p{
+        margin-top: 15px;
+        margin-bottom: 18px;
+        font-weight: bold;
+        color: var(--cor3);
+    }
+
+    footer li,hr,p{
+        margin: 1px 40px 1px 40px;
+    }
