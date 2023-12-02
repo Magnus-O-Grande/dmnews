@@ -19,9 +19,6 @@
 }
 
 html, body{
-    width: 98.8.9vw;
-    height: 100vh;
-
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
 }
