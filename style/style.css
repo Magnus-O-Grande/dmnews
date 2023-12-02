@@ -68,9 +68,8 @@ main h1{
     color: var(--cor3);
     font-size: 2.5em;
     font-weight: bold;
-    text-align: left;
     line-height: 1.5em;
-    margin-left: 25px;
+    text-align: center;
 }
 
 main h2{
@@ -80,7 +79,7 @@ main h2{
     font-weight: bold;
     text-indent: 0.5em;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 main h3{
@@ -89,7 +88,7 @@ main h3{
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 main p{

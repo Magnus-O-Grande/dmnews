@@ -11,16 +11,13 @@ header {
     background-position: center;
     background-color: var(--cor0);
     background-size: contain;
-    /*EFEITO PARALAX*/
-    /*background-size: contain;
-    background-attachment: fixed;*/
 }
 
-/*
     main{
-        max-width: 600px;
-        min-width: 100vh;
-    }*/
+        max-width: 800px;
+        border-radius: 10px;
+        margin: auto;
+    }
 
     h1{
         font-size: 2.5em;
@@ -59,21 +56,19 @@ header {
     }
 
     section {
-        position: absolute;
-        display: flexbox;
-        top: 135%;
-        left: 80%;
+        display: block;
+        margin: auto;
     }
 
-    section a.link {
+    main a.link {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
-        color:var(--cor0);
+        color: #014aad;
         text-decoration: none;
         text-align: center;
     }
 
-    section a.link:hover {
+    a.link:hover {
         transition: .3s;
         color: #fcc729;
         text-decoration: underline;

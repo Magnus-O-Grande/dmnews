@@ -3,10 +3,10 @@
 /*CCONFIGURAÇÕES PARA MODO RETRATO (portrait)*/
 
 header {
-    padding: 350px;
-    padding-left: 0;
-    padding-right: 0;
-    background-image: url(../imagens/cabecalho-form.jpg);
+    padding: 430px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url("../imagens/DM-news.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
@@ -14,12 +14,12 @@ header {
 }
 
 main{
-    width:93.8%;
+    max-width: 450px;
     margin: auto;
 }
 
 main h1{
-    font-size: 1.9em;
+    font-size: 2.5em;
 }
 
 main h2{
@@ -39,16 +39,16 @@ section {
     margin: auto;
 }
 
-section a.link {
+a.link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     color: #014aad;
     text-decoration: none;
 }
 
-section a.link:hover {
+a.link:hover {
     transition: .3s;
-    color: #cd2418;
+    color: #fcc729;
     text-decoration: underline;
 }
 
