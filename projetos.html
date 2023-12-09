@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-dmnews/logo-dmnews.png" type="image/x-icon">
+
+    <!--Folhas de estilos-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="style/retrato.css" media="screen and (orientation: portrait)">
+
+    <title>DM news</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <span class="material-symbols-outlined" id="menu" onclick="menuAcessar()">
+        menu
+        </span>
+
+    <script >
+        function menuAcessar(){
+var list = document.getElementById('list')
+const menu = document.getElementById('menu')
+
+if(list.style.display == 'none'){
+    list.style.display = 'block'
+}else{
+    list.style.display = 'none'
+}
+
+}
+</script>
+
+    <nav id="list" >
+        <a href="dmnews.html">Home</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="conheca-escola.html">Conheça nossa escola</a>
+    </nav>
+
+    <main class="main">
+        <div class="projeto">
+            <div class="card">
+                <div class="imagem">
+                    <img src="./imagens/wolfbook.jpeg" alt="">
+                </div>
+                <a href="https://kllest.github.io/Wolf_Book/" class="botao" target="_blank"><button>Conheça o projeto Wolf Book</button></a>
+            </div>
+
+            <div class="card">
+                <div class="imagem">
+                    <img src="" alt="">
+                </div>
+                <a href="https://www.instagram.com/pilhasseguras/" class="botao" target="_blank"><button>Conheça o projeto Pilhas seguras</button></a>
+            </div>
+
+            <div class="card">
+                <div class="imagem">
+                    <img src="./imagens/maker.jpeg" alt="">
+                </div>
+                <a href="https://wa.me/559181817590" class="botao" target="_blank"><button>Entrar em contato</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>        
+        <ul>
+     <li>
+         <p>Sobre</p>
+         <hr>
+         <ul>
+             <li><a href="#">Historia</a></li>
+             <li><a href="#">Contatos</a></li>
+             <li><a href="#">Autores</a></li>
+         </ul>
+     </li>
+        </ul>
+        
+     <ul>
+         <li>
+             <p>Redes Sociais</p>
+             <hr>
+             <ul>
+                 <li><a href="https://www.instagram.com/dm.news_oficial/" target="_blank">Instagram</a></li>
+                 <li><a href="https://www.tiktok.com/@dm.news_oficial" target="_blank">TikTok</a></li>
+                 <li><a href="https://www.facebook.com/profile.php?id=61550480223811" target="_blank">Facebook</a></li>
+                 <li><a href="https://www.youtube.com/@DMNews-ep1ou" target="_blank">YouTube</a></li>
+             </ul>
+         </li>
+     </ul>
+
+     <ul>
+         <li>
+             <p>Início</p>
+             <hr>
+             <ul>
+                 <li><a href="dmnews.html">Home</a></li>
+                 <li><a href="quem-somos.html">Quem somos</a></li>
+                 <li><a href="conheça-escola.html">Conheça nossa escola</a></li>
+             </ul>
+         </li>
+     </ul>
+</footer>
+
+</body>
+</html>

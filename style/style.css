@@ -61,6 +61,51 @@ main {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
 }
 
+.main{
+    margin: auto;
+    margin-top: 30px;
+}
+
+.projeto{
+    width: 700px;
+    margin: auto;
+}
+.card{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.imagem img{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  }
+  #menu{
+      display: none;
+  }
+button{
+    margin-top: 20px;
+    width: 700px;
+    border-radius: 15px;
+    height: 60px;
+    border: none;
+    background-color: #fcc729;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #ffbf00;
+}
+
 main h1{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor3);
@@ -116,4 +161,33 @@ main ul {
     line-height: 1.7em;
     color: #014aad;
     margin-left: 70px;
+}
+
+/*media screen*/
+
+@media screen and (min-width: 300px) and (max-width: 1024px){
+    #menu{
+        display: block;
+        text-align: left;
+        color: #ffbf00;
+        width: 80%;
+        padding: 10px;
+    }
+    #list{
+        width: 40%;
+        margin: auto;
+        height: 300px;
+        position: absolute;
+        display: none;
+    }
+    a{
+        display: list-item;
+        text-align: center;
+    }
+
+    #colab{
+        width: 100%;
+    }
+  
+    
 }
