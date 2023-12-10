@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.frase {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.botão {
+    text-align: center;
+}
+
+.botão-app {
+    text-align: center;
+    background-color: #004aad;
+    transition: .3s;
+    width: 310px;
+}
+
+.inst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    margin-left: 0;
+}
+
+.linha1 {
+    border: 2px solid;
+    border-radius: 15px;
+    color: #cd2418;
+}
